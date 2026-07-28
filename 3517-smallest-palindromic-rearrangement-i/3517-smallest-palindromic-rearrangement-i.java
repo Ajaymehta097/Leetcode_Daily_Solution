@@ -5,7 +5,7 @@ class Solution {
         char[] arr = s.toCharArray();
         Arrays.sort(arr,0,mid);
         for(int i=0;i<mid;i++){
-            arr[arr.length-1-i] = arr[i];
+            arr[len-1-i] = arr[i];
         }
     return new String(arr);
     } 
