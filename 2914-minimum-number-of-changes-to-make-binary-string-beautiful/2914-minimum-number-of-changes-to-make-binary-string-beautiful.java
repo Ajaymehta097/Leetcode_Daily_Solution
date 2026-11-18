@@ -1,10 +1,12 @@
 class Solution {
     public int minChanges(String s) {
         int count=0;
-        for(int i=0;i<s.length();i+=2){
+        int i=0;
+        while(i<s.length()){
             if(s.charAt(i) != s.charAt(i+1)){
                 count++;
             }
+        i+=2;
         }
     return count;    
     }
